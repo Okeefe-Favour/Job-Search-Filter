@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: hsl(180, 29%, 50%); */
+}
+.overall-cont {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  width: 100%;
+  height: 70vh;
+  background-color: hsl(180, 29%, 50%);
+  z-index: 999;
+}
+.image .img {
+  width: 100%;
+  height: 100%;
+}
+.job-cont {
+  width: 800px;
+  /* height: 100%; */
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.job-card {
+  width: 100%;
+  border: 2px solid hsl(180, 52%, 96%);
+  display: flex;
+  padding: 10px 10px;
+  justify-content: space-between;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 30px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.job-card:nth-child(-n + 2) {
+  border-left: 5px solid hsl(180, 29%, 50%);
+}
+
+.red-1 {
+  color: hsl(180, 29%, 50%);
+  font-size: 13px;
+  font-weight: 600;
+}
+.red-2 {
+  /* border: 2px solid red; */
+  width: 50px;
+  height: 30px;
+  border-radius: 20px;
+  padding: 4px 4px;
+  text-align: center;
+  background-color: hsl(180, 29%, 50%);
+  color: hsl(180, 52%, 96%);
+  font-size: 13px;
+  font-weight: 600;
+}
+.red-3 {
+  /* border: 2px solid red; */
+  width: 75px;
+  height: 23px;
+  border-radius: 8px;
+  padding: 0 5px;
+  background-color: hsl(180, 14%, 20%);
+  font-weight: 800;
+  color: hsl(180, 52%, 96%);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.time {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.time span {
+  color: hsl(180, 8%, 52%);
+  font-size: 13px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.role {
+  background-color: hsl(180, 52%, 96%);
+  color: hsl(180, 14%, 20%);
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+}
+.roles {
+  background-color: hsl(180, 52%, 96%);
+  color: hsl(180, 14%, 20%);
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+}
+.language {
+  background-color: hsl(180, 52%, 96%);
+  color: hsl(180, 14%, 20%);
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+}
+/* }
+.languages {
+  background-color: hsl(180, 14%, 20%);
+  color: hsl(180, 29%, 50%);
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+}
+.languaging {
+  background-color: hsl(180, 14%, 20%);
+  color: hsl(180, 29%, 50%);
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+} */
+.flex {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+.solo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.solo img {
+  width: 100%;
+  height: 100%;
+}
+
+.first h2 {
+  margin-top: 10px;
+}
+.title {
+  font-size: 12px;
+}
+.job-box {
+  min-height: 40px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.buttons {
+  margin-left: auto;
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.filter-btn {
+  background-color: hsl(180, 14%, 20%);
+  color: hsl(180, 29%, 50%);
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+}
+.filter-items {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  width: 700px;
+  padding: 10px 10px;
+  border: 2px solid hsl(180, 29%, 50%);
+  margin-top: 10px;
+}
+.clear-btn {
+  background-color: hsl(180, 29%, 50%);
+  color: hsl(180, 52%, 96%);
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+}
+@media (max-width: 768px) {
+  .overall-cont {
+    justify-content: flex-start;
+  }
+
+  .image {
+    height: 30vh;
+  }
+
+  .job-cont,
+  .filter-items {
+    width: 100%;
+  }
+
+  .job-cont {
+    padding: 0 15px;
+  }
+
+  .filter-items {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .job-card {
+    padding: 20px 15px;
+  }
+
+  .flex {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .solo {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+  }
+
+  .first {
+    min-width: 0;
+  }
+
+  .buttons {
+    width: 100%;
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .time {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .job-box {
+    flex-wrap: wrap;
+  }
+}
