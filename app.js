@@ -39,14 +39,15 @@ const fetchData = function (data) {
 };
 let datafetch;
 const getAllJobs = function () {
-  fetch(`http://localhost:3000/Jobs`)
+  fetch(`./data/data.json`)
     .then((res) => {
       console.log(res);
       return res.json();
     })
     .then((data) => {
-      datafetch = data;
-      fetchData(data);
+      console.log(data);
+      datafetch = data.Jobs;
+      fetchData(datafetch);
     });
 };
 getAllJobs();
